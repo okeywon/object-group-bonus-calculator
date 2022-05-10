@@ -39,4 +39,38 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
+function calculateTotalBonus(employees) {
+  let i = 0;
+  bonusPercentage = 0;
+  let calculateTotalBonus = (employees[i].annualSalary / bonusPercentage);
+  for (let employee of employees){
+    if (employees.reviewRating >= 2){
+      bonusPercentage += 0;
+    }
+    else if(employees.reviewRating == 3){
+      bonusPercentage += 4;
+    }
+    else if(employees.reviewRating == 4){
+      bonusPercentage += 6;
+    }
+    else if(employees.reviewRating == 5){
+      bonusPercentage += 10;
+  }
+function addNewEmployee (name, bonusPercentage, totalCompensation, totalBonus) {
+  
+  let newEmployee = {
+    name: name,
+    bonusPercentage: bonusPercentage,
+    totalCompensation: totalCompensation,
+    totalBonus: totalBonus 
+  }
+  newEmployee.push(employees);
+return newEmployee;
+}
+return calculateTotalBonus; 
+}
+}
+calculateTotalBonus(employees);
+console.log(employees[0].annualSalary);
+
 console.log( employees );
